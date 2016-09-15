@@ -18,35 +18,34 @@ Resources to accompany my PyData Carolinas 2016 talk on PySpark 2.0 and Zeppelin
 - Download and install [vagrant](http://www.vagrantup.com/downloads.html "vagrant")
 - Download and install [Virtual Box](https://www.virtualbox.org/ "Virtual Box")
 - pip install [ansible](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip "ansible")
-
-	`sudo easy_install pip`
-	`sudo pip install ansible`
-	`ansible --version`
-- unzip the Zeppelin source contained in this repo (zeppelin-0.6.1.zip)
-- **Note: It's important that you use this .zip as there is an unfixed issue with the official repo on the apache site that will cause the build to fail)**
+```
+	sudo easy_install pip
+	sudo pip install ansible
+	ansible --version
+```
+- Unzip the Zeppelin source contained in this repo (zeppelin-0.6.1.zip)
+- **Note: It's important that you use this .zip as there is an unfixed issue within the official Apache mirrors that will cause the build to fail)**
 - `cd` to `~/zeppelin-0.6.1/scripts/vagrant`
-6. start vagrant and build the VM (this will take about 15 minutes)
-	`vagrant up`
-7. Post `vagrant up`, git clone the zeppelin branch into this directory from your host machine
+- Start vagrant and build the VM (this will take about 15 minutes) by runnin `vagrant up` within the vagrant directory. 
+- Post running `vagrant up`, git clone the zeppelin branch into this directory from your host machine
 `git clone git://git.apache.org/zeppelin.git`
 
 # What's in this VM?
 The virtual machine consists of:
-
-    Ubuntu Server 14.04 LTS
-    Node.js 0.12.7
-    npm 2.11.3
-    ruby 1.9.3 + rake, make and bundler (only required if building jekyll documentation)
-    Maven 3.3.9
-    Git
-    Unzip
-    libfontconfig to avoid phatomJs missing dependency issues
-    openjdk-7-jdk
-    Python addons: pip, matplotlib, scipy, numpy, pandas
-    R and R Packages required to run the R Interpreter and the related R tutorial notebook, including: Knitr, devtools, repr, rCharts, ggplot2, googleVis, mplot, htmltools, base64enc, data.table
+- Ubuntu Server 14.04 LTS
+- Node.js 0.12.7
+- npm 2.11.3
+- ruby 1.9.3 + rake, make and bundler (only required if building jekyll documentation)
+- Maven 3.3.9 (change from official repo which unsuccessfully attempts to install 3.3.3)
+- Git
+- Unzip
+- libfontconfig to avoid phatomJs missing dependency issues
+- openjdk-7-jdk
+- Python addons: pip, matplotlib, scipy, numpy, pandas
+- R and R Packages required to run the R Interpreter and the related R tutorial notebook, including: Knitr, devtools, repr, rCharts, ggplot2, googleVis, mplot, htmltools, base64enc, data.table
 
 # Time to Build Zeppelin
-- this is going to take a while - my latest run took `Total time: 53:33 min`
+- This is going to take a while - my latest build took `Total time: 53:33 min`
 - Run the `vagrant up` command one more time
 -  **Note: Cloning the project again may seem counter intuitive, since this script originated from the project repository.  Consider copying just the vagrant/zeppelin-dev script from the zeppelin project as a stand alone directory, then once again clone the specific branch you wish to build.**
 - Run `vagrant ssh`
