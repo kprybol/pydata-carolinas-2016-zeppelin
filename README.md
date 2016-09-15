@@ -1,10 +1,13 @@
 # pydata-carolinas-2016-zeppelin
 
 ![PyData Carolinas 2016 Logo](http://pydata.org/carolinas2016/static/images/pydata-logo-carolinas-2016.png)
+
 Resources to accompany my PyData Carolinas 2016 talk on PySpark 2.0 and Zeppelin Notebooks
+
 ![Zeppelin Logo](http://zeppelin-project.org/assets/themes/nflabs-sb/img/zeppelin-logo.svg)
 
 **Apache Github Mirror: [Readme File](https://github.com/apache/zeppelin/blob/master/README.md)**
+
 **Mailing Lists: [User and Dev mailing list](http://zeppelin.apache.org/community.html)**
 
 # Want to Follow Along?
