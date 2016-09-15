@@ -56,7 +56,7 @@ The virtual machine consists of:
 
 # Run Zeppelin
 - After Zeppelin, Spark, Hadoop, etc. have finished building, you can start Zeppelin by running `./bin/zeppelin-daemon.sh start` from within the VM
-- You can connect to your Zeppelin instance by directing the web browser on your host machine to: http://localhost:8080/
+- You can connect to your Zeppelin instance by directing the web browser on your host machine to: `http://localhost:8080/`
 - You can stop the Zeppelin instance later by running `bin/zeppelin-daemon.sh stop`
 
 # Tweaking the VM
