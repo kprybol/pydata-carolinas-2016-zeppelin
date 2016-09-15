@@ -24,7 +24,7 @@ Resources to accompany my PyData Carolinas 2016 talk on PySpark 2.0 and Zeppelin
 	ansible --version
 ```
 - Unzip the Zeppelin source contained in this repo (zeppelin-0.6.1.zip)
-- **Note: It's important that you use this .zip as there is an unfixed issue within the official Apache mirrors that will cause the build to fail)**
+- **Note: It's important that you use this .zip as there is an unfixed issue within the official Apache mirrors that will cause the build to fail**
 - `cd` to `~/zeppelin-0.6.1/scripts/vagrant`
 - Start vagrant and build the VM (this will take about 15 minutes) by runnin `vagrant up` within the vagrant directory. 
 - Post running `vagrant up`, git clone the zeppelin branch into this directory from your host machine
