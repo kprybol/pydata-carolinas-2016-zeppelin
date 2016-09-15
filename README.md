@@ -23,7 +23,7 @@ Resources to accompany my PyData Carolinas 2016 talk on PySpark 2.0 and Zeppelin
 	`sudo pip install ansible`
 	`ansible --version`
 - unzip the Zeppelin source contained in this repo (zeppelin-0.6.1.zip)
-- **Note**: It's important that you use this .zip as there is an unfixed issue with the official repo on the apache site that will cause the build to fail)
+- **Note: It's important that you use this .zip as there is an unfixed issue with the official repo on the apache site that will cause the build to fail)**
 - `cd` to `~/zeppelin-0.6.1/scripts/vagrant`
 6. start vagrant and build the VM (this will take about 15 minutes)
 	`vagrant up`
@@ -48,7 +48,7 @@ The virtual machine consists of:
 # Time to Build Zeppelin
 - this is going to take a while - my latest run took `Total time: 53:33 min`
 - Run the `vagrant up` command one more time
--  **Note**: Cloning the project again may seem counter intuitive, since this script originated from the project repository.  Consider copying just the vagrant/zeppelin-dev script from the zeppelin project as a stand alone directory, then once again clone the specific branch you wish to build.
+-  **Note: Cloning the project again may seem counter intuitive, since this script originated from the project repository.  Consider copying just the vagrant/zeppelin-dev script from the zeppelin project as a stand alone directory, then once again clone the specific branch you wish to build.**
 - Run `vagrant ssh`
 - Once inside the VM, `cd /vagrant/zeppelin`
 - Now it's time to finally build Zeppelin along with all of the necessary components. We will be using Spark 2.0, Hadoop 2.6 with the PySpark, and SparkR interpreters.
