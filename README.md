@@ -61,11 +61,10 @@ The virtual machine consists of:
 
 # Tweaking the VM
 - If you need to use a specific IP address or host, or if you wish to disable port forwarding, you can do so from within the vagrantfile but commenting/uncommenting out the appropriate lines.
-
-
-    #config.vm.network "forwarded_port", guest: 8080, host: 8080
-    config.vm.network "private_network", ip: "192.168.51.52"
-
+```
+#config.vm.network "forwarded_port", guest: 8080, host: 8080
+config.vm.network "private_network", ip: "192.168.51.52"
+```
 
 
 
