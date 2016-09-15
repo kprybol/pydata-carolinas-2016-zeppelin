@@ -59,7 +59,7 @@ The virtual machine consists of:
 - You can stop the Zeppelin instance later by running `bin/zeppelin-daemon.sh stop`
 
 # Tweaking the VM
-- If you need to use a specific IP address or host, or if you wish to disable port forwarding, you can do so from within the vagrantfile but commenting/uncommenting out the appropriate lines.
+- If you need to use a specific IP address or host, or if you wish to disable port forwarding, you can do so from within the vagrantfile by commenting/uncommenting out the appropriate lines.
 ```
 	#config.vm.network "forwarded_port", guest: 8080, host: 8080
 	config.vm.network "private_network", ip: "192.168.51.52"
